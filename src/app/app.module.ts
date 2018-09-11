@@ -12,6 +12,13 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {
+  MatButtonModule,
+  MatInputModule,
+  MatGridListModule,
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -24,12 +31,16 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
     }),
+    MatButtonModule,
+    MatInputModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
