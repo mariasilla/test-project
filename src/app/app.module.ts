@@ -19,6 +19,8 @@ import {
   MatInputModule,
   MatGridListModule,
   MatToolbarModule,
+  MatMenuModule,
+  MatIconModule,
 } from '@angular/material';
 
 @NgModule({
@@ -43,6 +45,8 @@ import {
     MatInputModule,
     MatGridListModule,
     MatToolbarModule,
+    MatMenuModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
