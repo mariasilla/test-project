@@ -4,7 +4,7 @@
     <input #heroName />
   </label>
   <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(heroName.value); heroName.value=''" mat-button>
+  <button (click)="add(heroName.value); heroName.value=''" mat-raised-button color="primary">
     add
   </button>
 </div>

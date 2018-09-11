@@ -4,9 +4,9 @@
   <div><span>id: </span>{{hero.id}}</div>
   <div>
     <label>name:
-      <input [(ngModel)]="hero.name" placeholder="name">
+      <input matInput [(ngModel)]="hero.name" placeholder="name">
     </label>
   </div>
   
   </div>
-  <button (click)="save()">save</button>
+  <button (click)="save()" mat-raised-button color="primary">save</button>
