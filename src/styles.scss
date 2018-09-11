@@ -3,8 +3,9 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 //Defining a custom theme
-// @import '~@angular/material/theming';
-// @include mat-core();
+@import '~@angular/material/theming';
+@include mat-core();
+
 
 
 
