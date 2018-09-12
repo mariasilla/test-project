@@ -1,14 +1,16 @@
 @import '~@angular/material/theming';
 @import './custom-palette.scss';
+@import './custom-mixins.scss';
 
 @include mat-core();
 
+$ocean-theme-error: mat-palette($error-burgundy);
 $ocean-theme-primary: mat-palette($pr-azure);
 $ocean-theme-accent: mat-palette($sc-purple);
-$ocean-theme-warn: mat-palette($w-orange);
-$ocean-theme-error: mat-palette($error-burgundy);
+$ocean-theme-warn: mat-palette($w-orange);;
 
 $ocean-theme: mat-light-theme(
+  $ocean-theme-error,
   $ocean-theme-primary,
   $ocean-theme-accent,
   $ocean-theme-warn

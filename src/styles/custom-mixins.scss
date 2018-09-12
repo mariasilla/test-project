@@ -1,0 +1,29 @@
+// @import './button-mixins.scss';
+
+// Creates a container object for a light theme to be given to individual component theme mixins.
+@function mat-light-theme($error, $primary, $accent, $warn: mat-palette($mat-red)) {
+  @return (
+    error: $error,
+    primary: $primary,
+    accent: $accent,
+    warn: $warn,
+    is-dark: false,
+    foreground: $mat-light-theme-foreground,
+    background: $mat-light-theme-background,
+  );
+}
+
+
+// Creates a container object for a dark theme to be given to individual component theme mixins.
+@function mat-dark-theme($error, $primary, $accent, $warn: mat-palette($mat-red)) {
+  @return (
+    error: $error,
+    primary: $primary,
+    accent: $accent,
+    warn: $warn,
+    is-dark: true,
+    foreground: $mat-dark-theme-foreground,
+    background: $mat-dark-theme-background,
+  );
+}
+
