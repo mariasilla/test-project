@@ -1,10 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
-/* Application-wide Styles */
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+//angular pre-built theme
+// @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-//Defining a custom theme
-@import '~@angular/material/theming';
-@include mat-core();
+//import a custom theme
+@import './custom-theme';
 
 
 
