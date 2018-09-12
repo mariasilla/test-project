@@ -39,6 +39,15 @@ h4 {
   cursor: pointer;
   color: #607d8b;
 }
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
 
 @media (max-width: 600px) {
   .module {
@@ -51,3 +60,4 @@ h4 {
     min-width: 60px;
   }
 }
+

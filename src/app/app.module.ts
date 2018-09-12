@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
@@ -21,6 +21,8 @@ import {
   MatToolbarModule,
   MatMenuModule,
   MatIconModule,
+  MatProgressBarModule,
+  MatFormFieldModule,
 } from '@angular/material';
 
 @NgModule({
@@ -36,6 +38,7 @@ import {
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
@@ -47,6 +50,8 @@ import {
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
+    MatProgressBarModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
