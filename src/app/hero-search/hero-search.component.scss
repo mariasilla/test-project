@@ -1,4 +1,8 @@
 /* HeroSearch private styles */
+
+h4{
+  margin: 60px 0 7px 0;
+}
 .search-result li {
   border-bottom: 1px solid gray;
   border-left: 1px solid gray;
@@ -30,6 +34,7 @@
 #search-box {
   width: 200px;
   height: 20px;
+  margin-bottom: 72px;
 }
 
 
