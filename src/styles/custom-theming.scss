@@ -1,4 +1,5 @@
 @import './button-mixins';
+@import './form-field-mixins';
 
 // Creates a container object for a light theme to be given to individual component theme mixins.
 @function mat-light-theme($error, $primary, $accent, $warn: mat-palette($mat-red)) {

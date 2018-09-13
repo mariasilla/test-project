@@ -18,7 +18,7 @@ $ocean-theme: mat-light-theme(
 
 @include angular-material-theme($ocean-theme);
 
-//Custom them using Angular pre-built palettes
+//Custom theme using Angular pre-built palettes
 // $custom-theme-primary: mat-palette($mat-light-green);
 // $custom-theme-accent: mat-palette($mat-orange, A200, A100, A400);
 // $custom-theme-warn: mat-palette($mat-red);
