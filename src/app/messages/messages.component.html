@@ -1,9 +1,9 @@
 <div *ngIf="messageService.messages.length">
 
   <h2>Messages</h2>
-  <button class="clear" (click)="messageService.clear()" mat-raised-button color="primary">clear</button>
+  <button class="clear" (click)="messageService.clear()" mat-raised-button color="error">clear</button>
   <div *ngFor='let message of messageService.messages'> {{message}} </div>
 
 </div>
 
-<mat-progress-bar mode="query" color="warn"></mat-progress-bar>
+<!-- <mat-progress-bar mode="query" color="warn"></mat-progress-bar> -->
