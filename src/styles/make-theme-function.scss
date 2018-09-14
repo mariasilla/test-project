@@ -1,0 +1,19 @@
+@import './ocean-palette.scss';
+
+@function make_test_theme(
+  $primary: mat-palette($test-azure-palette),
+  $accent: mat-palette($test-accent-palette),
+  $warn: mat-palette($test-warn-palette),
+  $error: mat-palette($test-error-palette)
+) {
+  @return (
+    primary: $primary,
+    accent: $accent,
+    warn: $warn,
+    error: $error,
+    is-dark: false,
+    foreground: $mat-light-theme-foreground,
+    background: $mat-light-theme-background
+  );
+}
+

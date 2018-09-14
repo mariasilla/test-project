@@ -1,26 +1,9 @@
 @import '~@angular/material/theming';
-@import './custom-palette.scss';
-@import './custom-theming.scss';
+@import './make-theme-function.scss';
+@import './test-custom-theme.scss';
 
-@include mat-core();
+// @include mat-core();
 
-$ocean-theme-error: mat-palette($error-burgundy);
-$ocean-theme-primary: mat-palette($pr-azure);
-$ocean-theme-accent: mat-palette($sc-purple);
-$ocean-theme-warn: mat-palette($w-orange);
-
-$ocean-theme: mat-light-theme(
-  $ocean-theme-error,
-  $ocean-theme-primary,
-  $ocean-theme-accent,
-  $ocean-theme-warn
-);
-
-@include angular-material-theme($ocean-theme);
-
-//Custom theme using Angular pre-built palettes
-// $custom-theme-primary: mat-palette($mat-light-green);
-// $custom-theme-accent: mat-palette($mat-orange, A200, A100, A400);
-// $custom-theme-warn: mat-palette($mat-red);
-// $custom-theme: mat-light-theme($custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
-// @include angular-material-theme($custom-theme);
+$ocean-theme: make_test_theme(mat-palette($test-azure-palette));
+// @include test-custom-theme($ocean-theme);
+ 

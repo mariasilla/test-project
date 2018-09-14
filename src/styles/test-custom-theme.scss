@@ -1,0 +1,7 @@
+@import './button-mixins';
+@import './form-field-mixins';
+
+  @mixin test-custom-theme($theme) {
+    @include angular-material-theme($theme);
+    //add code to call custom button & form-field mixins
+  }
