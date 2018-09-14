@@ -1,4 +1,4 @@
-@mixin test-button-theme($theme) {
+@mixin test-button-theme-overlay($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
@@ -23,7 +23,7 @@
   }
 }
 
-@mixin _test-button-theme($theme) {
+@mixin test-button-theme($theme) {
   $error: map-get($theme, error);
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
@@ -42,6 +42,7 @@
     background: transparent;
 
     @include _test-button-theme-property($theme, 'color', default);
+
   }
 
   .mat-flat-button,
