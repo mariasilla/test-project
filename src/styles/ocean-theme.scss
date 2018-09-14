@@ -5,5 +5,5 @@
 // @include mat-core();
 
 $ocean-theme: make_test_theme(mat-palette($test-azure-palette));
-// @include test-custom-theme($ocean-theme);
+@include test-custom-theme($ocean-theme);
  
