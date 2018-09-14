@@ -4,4 +4,5 @@
   @mixin test-custom-theme($theme) {
     @include angular-material-theme($theme);
     //add code to call custom button & form-field mixins
+    @include test-button-theme($theme);
   }
