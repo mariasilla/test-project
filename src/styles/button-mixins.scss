@@ -1,18 +1,18 @@
 @mixin test-button-theme($theme) {
   $error: map-get($theme, error);
-  $primary: map-get($theme, primary);
-  $accent: map-get($theme, accent);
-  $warn: map-get($theme, warn);
-  $background: map-get($theme, background);
-  $foreground: map-get($theme, foreground);
+  // $primary: map-get($theme, primary);
+  // $accent: map-get($theme, accent);
+  // $warn: map-get($theme, warn);
+  // $background: map-get($theme, background);
+  // $foreground: map-get($theme, foreground);
 
   .mat-flat-button,
   .mat-raised-button,
   .mat-fab,
   .mat-mini-fab {
     // Default font and background color when not using any color palette.
-    color: mat-color($foreground, text);
-    background-color: mat-color($background, raised-button);
+    // color: mat-color($foreground, text);
+    // background-color: mat-color($background, raised-button);
 
     @include _test-button-theme-property($theme, 'color', default-contrast);
     @include _test-button-theme-property($theme, 'background-color', default);
@@ -22,22 +22,22 @@
 // Applies a property to an mat-button element for each of the supported palettes.
 @mixin _test-button-theme-property($theme, $property, $hue) {
   $error: map-get($theme, error);
-  $primary: map-get($theme, primary);
-  $accent: map-get($theme, accent);
-  $warn: map-get($theme, warn);
-  $background: map-get($theme, background);
-  $foreground: map-get($theme, foreground);
+  // $primary: map-get($theme, primary);
+  // $accent: map-get($theme, accent);
+  // $warn: map-get($theme, warn);
+  // $background: map-get($theme, background);
+  // $foreground: map-get($theme, foreground);
 
   &.mat-error {
     #{$property}: mat-color($error, $hue);
   }
-  &.mat-primary {
-    #{$property}: mat-color($primary, $hue);
-  }
-  &.mat-accent {
-    #{$property}: mat-color($accent, $hue);
-  }
-  &.mat-warn {
-    #{$property}: mat-color($warn, $hue);
-  }
+  // &.mat-primary {
+  //   #{$property}: mat-color($primary, $hue);
+  // }
+  // &.mat-accent {
+  //   #{$property}: mat-color($accent, $hue);
+  // }
+  // &.mat-warn {
+  //   #{$property}: mat-color($warn, $hue);
+  // }
 }
