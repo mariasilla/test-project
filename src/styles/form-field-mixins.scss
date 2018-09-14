@@ -1,6 +1,6 @@
 // Theme styles that apply to all appearances of the form-field.
 
-@mixin mat-form-field-theme($theme) {
+@mixin test-form-field-theme($theme) {
   $error: map-get($theme, error); 
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
@@ -63,9 +63,7 @@
     }
   }
 
-  // Styling for the error state of the form field. Note that while the same can be
-  // achieved with the ng-* classes, we use this approach in order to ensure that the same
-  // logic is used to style the error state and to show the error messages.
+  // Styling for the error state of the form field.
   .mat-form-field.mat-form-field-invalid {
     .mat-form-field-label {
       color: $underline-color-error;

@@ -5,4 +5,5 @@
     @include angular-material-theme($theme);
     @include test-button-theme($theme);
     @include _test-button-theme($theme);
+    @include test-form-field-theme($theme);
   }
