@@ -1,28 +1,3 @@
-@mixin test-button-theme-overlay($theme) {
-  $primary: map-get($theme, primary);
-  $accent: map-get($theme, accent);
-  $warn: map-get($theme, warn);
-  $error: map-get($theme, error);
-  &.mat-primary .mat-button-focus-overlay {
-    background-color: mat-color($primary, 0.12);
-  }
-
-  &.mat-accent .mat-button-focus-overlay {
-    background-color: mat-color($accent, 0.12);
-  }
-
-  &.mat-warn .mat-button-focus-overlay {
-    background-color: mat-color($warn, 0.12);
-  }
-
-  &[disabled] .mat-button-focus-overlay {
-    background-color: transparent;
-  }
-  &.mat-error .mat-button-focus-overlay {
-    background-color: mat-color($error, 0.12);
-  }
-}
-
 @mixin test-button-theme($theme) {
   $error: map-get($theme, error);
   $primary: map-get($theme, primary);
