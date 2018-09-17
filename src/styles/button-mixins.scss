@@ -10,7 +10,6 @@
   }
 }
 
-// Applies a property to an mat-button element for each of the supported palettes.
 @mixin _test-button-theme-property($theme, $property, $hue) {
   $error: map-get($theme, error);
   &.mat-error {
