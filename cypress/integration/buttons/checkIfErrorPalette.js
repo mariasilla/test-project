@@ -1,5 +1,5 @@
 describe('checkIfErrorPaletteExists', function() {
-  it('button error color attribute', function() {
+  it('button has error color attribute', function() {
     cy.visit('http://localhost:4200/heroes');
     cy.get('.mat-app-background')
       .find('button')
