@@ -5,16 +5,7 @@ describe('checkIfErrorPaletteExists', function() {
       .find('button')
       .click()
       .should('have.attr', 'color', 'error')
+      // .and('have.class', '.mat-error');
   });
 });
 
-
-// describe('checkIfErrorPaletteExists', function() {
-//   it('button has .mat-error class', function() {
-//     cy.visit('http://localhost:4200/heroes');
-//     cy.get('.mat-app-background')
-//       .find('button')
-//       .click()
-//       .and('have.class', '.mat-raised-button.mat-error');
-//   });
-// });
